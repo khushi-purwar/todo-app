@@ -8,7 +8,7 @@ module.exports = async () => {
             useUnifiedTopology: true,
             useFindAndModify: false,
         };
-        const uri = process.env.MONGO_URI;
+        const uri = "mongodb+srv://khushi14:khushipurwar@todoapp.vrinj.mongodb.net/todo-app?retryWrites=true&w=majority";
         await mongoose.connect(
             // "mongodb://localhost/todo-app",
             uri,
