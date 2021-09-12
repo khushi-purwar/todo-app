@@ -1,8 +1,8 @@
 {
 
     "scripts": {
-        "start": "node server/index.js",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+        "start": "node server/index.js"
+        
     },
     
     "engines": {
