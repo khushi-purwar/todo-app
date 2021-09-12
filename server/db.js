@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+require('dotenv').config();
 module.exports = async () => {
     try {
         const connectionParams = {
@@ -9,8 +9,8 @@ module.exports = async () => {
             useFindAndModify: false,
         };
         const uri = process.env.MONGO_URI;
+    
         await mongoose.connect(
-            // "mongodb://localhost/todo-app",
             uri,
             connectionParams
         );
