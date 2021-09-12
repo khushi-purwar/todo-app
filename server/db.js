@@ -6,7 +6,7 @@ module.exports = async () => {
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true,
-            useFindAndModify: true,
+            useFindAndModify: false,
         };
         await mongoose.connect(
             "mongodb://localhost/todo-app",
